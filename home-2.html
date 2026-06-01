@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-End Auto Detailing - Services Focus</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-xl bg-main py-3 border-bottom sticky-top shadow-sm z-3">
+        <div class="container-fluid px-4">
+            
+            <a class="navbar-brand d-flex align-items-center m-0 text-decoration-none hover-scale" href="index.html">
+                <img src="images/generated-image-371222529.webp" alt="Elite Detailing Logo" height="40" class="me-2 flex-shrink-0">
+                <span class="logo-text fw-bold fs-4 text-main text-nowrap">Elite Cars.</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold small">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-lg-2" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="dashboardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-lg-2" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="dashboard-user.html">Client Portal</a></li>
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="dashboard-admin.html">Admin Operations</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+                <div class="nav-controls-wrapper d-flex flex-column flex-lg-row align-items-lg-center gap-3 mt-3 mt-lg-0">
+                    
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm bg-alt border shadow-sm theme-toggle-btn" aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill theme-icon-element text-muted"></i>
+                        </button>
+                        <button class="btn btn-sm bg-alt border shadow-sm rtl-toggle-btn fw-bold text-muted px-2" aria-label="Toggle RTL">
+                            RTL
+                        </button>
+                    </div>
+                    
+                    <div class="d-flex gap-2">
+                        <a href="login.html" class="btn btn-sm btn-outline-dark fw-bold px-4 shadow-sm">Login</a>
+                        <a href="book-now.html" class="btn btn-sm btn-secondary-custom fw-bold px-4 shadow-sm">Book Now</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        
+        <section class="bg-alt pt-0 pb-0 overflow-hidden border-bottom">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 p-5 p-lg-5 text-center text-lg-start">
+                    <div class="ps-xl-5 pe-xl-4 py-5">
+                        <span class="badge bg-secondary text-dark px-3 py-2 rounded-pill mb-3 fw-bold">Certified Master Installers</span>
+                        <h1 class="display-4 fw-bold mb-4 text-main">Precision Detailing & Advanced Protection.</h1>
+                        <p class="lead mb-5 text-muted">We provide mastercraft paint correction, nanoceramic coatings, and interior restoration. Protect your investment with the industry's highest standards.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                            <a href="book-now.html" class="btn-secondary-custom px-4 py-3 fs-6">Schedule Service</a>
+                            <a href="#packages" class="btn-primary-custom px-4 py-3 fs-6 bg-transparent border text-main">View Packages</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block position-relative" style="min-height: 700px;">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1200&q=80" alt="Detailing Wash Foam" class="position-absolute w-100 h-100" style="object-fit: cover; top: 0; left: 0;">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5 my-4">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-main">Our Signature Services</h2>
+                    <p class="text-muted">Specialized treatments to restore and protect your vehicle.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border shadow-sm bg-main service-card overflow-hidden">
+                            <img src="images/brandon-atchison-_DzW3MT-iIY-unsplash.webp" class="card-img-top border-bottom" alt="Paint Correction" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="h5 mb-2 text-main">Paint Correction</h3>
+                                <p class="small text-muted mb-0">Multi-stage machine compounding to remove swirls, scratches, and restore a flawless mirror finish.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border shadow-sm bg-main service-card overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80" class="card-img-top border-bottom" alt="Ceramic Coating" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="h5 mb-2 text-main">Ceramic Coating</h3>
+                                <p class="small text-muted mb-0">10H structural nanoceramic layers locking in your paint's gloss with years of extreme hydrophobic protection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border shadow-sm bg-main service-card overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=600&q=80" class="card-img-top border-bottom" alt="PPF Clear Bra" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="h5 mb-2 text-main">Clear Bra (PPF)</h3>
+                                <p class="small text-muted mb-0">Self-healing, invisible paint protection film to stop rock chips and road debris damage on high-impact zones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border shadow-sm bg-main service-card overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80" class="card-img-top border-bottom" alt="Interior Detailing" style="height: 200px; object-fit: cover;">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="h5 mb-2 text-main">Interior Restoration</h3>
+                                <p class="small text-muted mb-0">Deep hot-water extraction, steam sanitization, and exotic leather ceramic coating applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-alt py-5 border-top border-bottom">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="text-main">The Mastercraft Process</h2>
+                    <p class="text-muted">How we transform your vehicle from intake to delivery.</p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-md-3 position-relative process-step">
+                        <div class="bg-main border rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-search fs-2 text-secondary"></i>
+                        </div>
+                        <h4 class="h6 fw-bold text-main">1. Deep Inspection</h4>
+                        <p class="small text-muted">Ultrasonic paint depth readings and multi-spectrum light defect mapping.</p>
+                    </div>
+                    <div class="col-md-3 position-relative process-step">
+                        <div class="bg-main border rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-droplet-half fs-2 text-secondary"></i>
+                        </div>
+                        <h4 class="h6 fw-bold text-main">2. Decontamination</h4>
+                        <p class="small text-muted">Chemical iron-removal and mechanical clay bar treatment to purify the clear coat.</p>
+                    </div>
+                    <div class="col-md-3 position-relative process-step">
+                        <div class="bg-main border rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-magic fs-2 text-secondary"></i>
+                        </div>
+                        <h4 class="h6 fw-bold text-main">3. Paint Correction</h4>
+                        <p class="small text-muted">Precision machine compounding to permanently level scratches and holograms.</p>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <div class="bg-main border rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-shield-check fs-2 text-secondary"></i>
+                        </div>
+                        <h4 class="h6 fw-bold text-main">4. Ceramic Lock</h4>
+                        <p class="small text-muted">Application of 9H/10H matrices, followed by shortwave infrared curing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages" class="py-5 my-4">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-main">Protection Packages</h2>
+                    <p class="text-muted">Transparent pricing for premium, guaranteed results.</p>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="card border bg-alt p-5 text-center h-100 shadow-sm rounded-4">
+                            <h3 class="h4 text-main">Enhance</h3>
+                            <h4 class="display-6 fw-bold text-secondary my-3">$499</h4>
+                            <p class="small text-muted mb-4">1-Year Ceramic Sealant</p>
+                            <ul class="list-unstyled text-start mb-4 text-main">
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Foam Decontamination Wash</li>
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Clay Bar Treatment</li>
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Light Gloss Enhancement Polish</li>
+                                <li class="mb-3 pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> 1-Year Spray Silica Sealant</li>
+                            </ul>
+                            <a href="book-now.html" class="btn-primary-custom w-100 bg-transparent border text-main">Select Package</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border border-2 border-secondary bg-main p-5 text-center h-100 shadow-lg rounded-4 position-relative z-2 transform-scale">
+                            <span class="badge bg-secondary text-dark position-absolute top-0 start-50 translate-middle py-2 px-4 rounded-pill fw-bold">Most Popular</span>
+                            <h3 class="h4 text-main mt-2">Correct & Protect</h3>
+                            <h4 class="display-6 fw-bold text-secondary my-3">$1,299</h4>
+                            <p class="small text-muted mb-4">3-Year 9H Ceramic Matrix</p>
+                            <ul class="list-unstyled text-start mb-4 text-main">
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Everything in Enhance</li>
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> 2-Stage Paint Correction (85% Defect Free)</li>
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Wheel Face Ceramic Coating</li>
+                                <li class="mb-3 pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Registered 3-Year Warranty</li>
+                            </ul>
+                            <a href="book-now.html" class="btn-secondary-custom w-100">Select Package</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border bg-alt p-5 text-center h-100 shadow-sm rounded-4">
+                            <h3 class="h4 text-main">Mastercraft</h3>
+                            <h4 class="display-6 fw-bold text-secondary my-3">$2,499</h4>
+                            <p class="small text-muted mb-4">5-Year 10H Base Layer</p>
+                            <ul class="list-unstyled text-start mb-4 text-main">
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Everything in Correct & Protect</li>
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Multi-Stage Sanding</li>
+                                <li class="mb-3 border-bottom pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> Wheels-Off Barrel & Caliper Coating</li>
+                                <li class="mb-3 pb-2"><i class="bi bi-check2 text-success me-2 fw-bold"></i> All Exterior Glass Coating</li>
+                            </ul>
+                            <a href="book-now.html" class="btn-primary-custom w-100 bg-transparent border text-main">Select Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-alt py-5 border-top border-bottom">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="text-main">Client Testimonials</h2>
+                    <p class="text-muted">Don't just take our word for it. See what our clients have to say.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border bg-main p-4 rounded-4 shadow-sm">
+                            <div class="d-flex text-secondary mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="text-main small fst-italic flex-grow-1">"Absolutely incredible work. They took my 2019 Porsche that was covered in wash scratches and made it look better than the day it rolled off the showroom floor. The client portal updates are a brilliant touch."</p>
+                            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                                <div class="bg-secondary text-dark rounded-circle d-flex justify-content-center align-items-center fw-bold me-3" style="width: 40px; height: 40px;">RC</div>
+                                <div>
+                                    <h6 class="mb-0 text-main fw-bold">Robert Chen</h6>
+                                    <span class="small text-muted">Porsche 911 GT3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border bg-main p-4 rounded-4 shadow-sm">
+                            <div class="d-flex text-secondary mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="text-main small fst-italic flex-grow-1">"The attention to detail here is unmatched. I got the Mastercraft package with 10H ceramic on my Aston Martin. Water literally flies off the car now, and washing it takes 15 minutes. Highly recommended."</p>
+                            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                                <div class="bg-secondary text-dark rounded-circle d-flex justify-content-center align-items-center fw-bold me-3" style="width: 40px; height: 40px;">JW</div>
+                                <div>
+                                    <h6 class="mb-0 text-main fw-bold">James Winchester</h6>
+                                    <span class="small text-muted">Aston Martin DB12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border bg-main p-4 rounded-4 shadow-sm">
+                            <div class="d-flex text-secondary mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="text-main small fst-italic flex-grow-1">"I was skeptical about ceramic coatings, but the team took the time to explain the science. My Range Rover's interior leather was also treated, and it easily wiped clean after a coffee spill. Lifesavers!"</p>
+                            <div class="d-flex align-items-center mt-3 pt-3 border-top">
+                                <div class="bg-secondary text-dark rounded-circle d-flex justify-content-center align-items-center fw-bold me-3" style="width: 40px; height: 40px;">EV</div>
+                                <div>
+                                    <h6 class="mb-0 text-main fw-bold">Eleanor Vance</h6>
+                                    <span class="small text-muted">Range Rover SV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 my-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h2 class="text-main">Frequently Asked Questions</h2>
+                            <p class="text-muted">Everything you need to know before booking your appointment.</p>
+                        </div>
+                        
+                        <div class="accordion custom-accordion" id="faqAccordion">
+                            <div class="accordion-item border bg-main mb-3 rounded shadow-sm overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-main bg-main collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        How long does a ceramic coating actually last?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small border-top">
+                                        Depending on the package you choose, our coatings are warranted for 1 to 5 years. The longevity heavily depends on how the vehicle is maintained. We provide a comprehensive care guide and offer an annual maintenance wash program to ensure your coating reaches its maximum lifespan.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border bg-main mb-3 rounded shadow-sm overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-main bg-main collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Why is paint correction necessary before coating?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small border-top">
+                                        Ceramic coatings act as a magnifying glass. If we apply a 10H coating over swirl marks, scratches, or water spots, those defects will be permanently locked under the coating and highly visible. Paint correction levels the clear coat, ensuring a flawless, mirror-like finish before we seal it.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border bg-main mb-3 rounded shadow-sm overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-main bg-main collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Do I need to leave my car at the facility overnight?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small border-top">
+                                        Yes. Proper paint correction and ceramic application take time. More importantly, ceramic coatings require a strict, climate-controlled curing period under shortwave infrared lamps before they can be exposed to outdoor elements. Most packages require the vehicle to stay with us for 2 to 3 days.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border bg-main mb-3 rounded shadow-sm overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold text-main bg-main collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Will ceramic coating prevent rock chips?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small border-top">
+                                        No. While ceramic coatings offer incredible protection against chemical stains, UV fading, and micro-marring, they cannot prevent physical impact damage from rocks or debris. If rock chip protection is your primary goal, we highly recommend our Clear Bra (Paint Protection Film) packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="py-5 bg-alt">
+        <div class="container px-4 my-4">
+            
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold text-main mb-3">Why Trust Elite Detailing?</h2>
+                    <p class="lead text-muted px-md-5">
+                        We don't just wash cars; we engineer surfaces. Our certified technicians use only the finest European machines and chemicals.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12 position-relative">
+                    <img src="images/lance-asper--pSOAtdMVlk-unsplash (1).webp" alt="Elite Detailing Studio" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 400px; object-fit: cover; object-position: center 70%;">
+                </div>
+            </div>
+
+            <div class="row g-4 position-relative z-2" style="margin-top: -80px;">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border border-opacity-25 bg-main h-100 p-4 rounded-4 shadow-lg hover-scale" style="transition: transform 0.3s ease;">
+                        <div class="bg-secondary bg-opacity-10 text-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                            <i class="bi bi-shield-check fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold text-main">Fully Insured & Secure</h5>
+                        <p class="text-muted small mb-0 lh-lg">
+                            Your investment is protected by a comprehensive Garage Keepers insurance policy inside our 24/7 monitored facility.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border border-opacity-25 bg-main h-100 p-4 rounded-4 shadow-lg hover-scale" style="transition: transform 0.3s ease;">
+                        <div class="bg-secondary bg-opacity-10 text-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                            <i class="bi bi-camera fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold text-main">Client Portal Updates</h5>
+                        <p class="text-muted small mb-0 lh-lg">
+                            Log in to track your vehicle's progress with daily macro-photography updates straight from the detailing bay.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="card border border-opacity-25 bg-main h-100 p-4 rounded-4 shadow-lg hover-scale" style="transition: transform 0.3s ease;">
+                        <div class="bg-secondary bg-opacity-10 text-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                            <i class="bi bi-award fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold text-main">Documented Warranties</h5>
+                        <p class="text-muted small mb-0 lh-lg">
+                            Every ceramic coating we apply is officially registered to your VIN and tied directly to the CARFAX database.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+        <section class="py-5" style="background-color: #111827;">
+            <div class="text-center py-5 my-5">
+                <h2 class="display-5 fw-bold mb-3" style="color: #ffffff !important;">Ready to Elevate Your Ride?</h2>
+                <p class="lead mx-auto mb-4" style="max-width: 600px; color: #ffffff !important; opacity: 0.75;">
+                    Our schedule fills up quickly. Secure your build slot today and give your vehicle the mastercraft treatment it deserves.
+                </p>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-4">
+                    <a href="#" class="btn btn-warning px-4 px-md-5 fw-bold text-dark">Book Your Slot</a>
+                    <a href="#" class="btn btn-solid-white px-4 px-md-5 fw-bold">Contact Studio</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   <footer class="bg-main border-top pt-5 pb-3 mt-auto z-2 position-relative">
+        <div class="container-fluid px-4">
+            <div class="row g-5 mb-5">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/generated-image-371222529.webp" alt="Elite Detailing Logo" height="50" class="me-3">
+                        <h4 class="logo-text fw-bold m-0 text-main">Elite Cars.</h4>
+                    </div>
+                    <p class="small text-muted mb-4 pe-lg-4 lh-lg">
+                        Automotive mastercraft. We do not just wash cars; we re-engineer clear coats, meticulously restore exotic leathers, and lock in absolute perfection with structural nanoceramics.
+                    </p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small">
+                        <li><a href="index.html" class="text-muted text-decoration-none hover-scale d-inline-block">Home</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none hover-scale d-inline-block">About Us</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Services</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none hover-scale d-inline-block">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Our Expertise</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small">
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Nanoceramic Coatings</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Paint Protection Film</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Paint Correction</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Leather Restoration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Hyderabad HQ</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small text-muted">
+                        <li class="d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt-fill text-secondary fs-5 mt-1"></i>
+                            <span class="lh-base">Level 4, Quantum Tech Park,<br>Hyderabad, Telangana, 500081</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone-fill text-secondary fs-5"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 pb-2 border-top small text-muted">
+                
+                <p class="mb-4 mb-md-0 fw-bold">&copy; 2026 Elite Detailing. All rights reserved.</p>
+                
+                <div class="d-flex flex-row gap-2">
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const htmlElement = document.documentElement;
+            
+            // 1. Element Selectors
+            const themeToggles = document.querySelectorAll('.theme-toggle-btn');
+            const rtlToggles = document.querySelectorAll('.rtl-toggle-btn');
+
+            /* ==========================================
+               THEME ENGINE (Light / Dark Mode)
+               ========================================== */
+            const savedTheme = localStorage.getItem('elite_theme') || 'light';
+            htmlElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcons(savedTheme);
+
+            themeToggles.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const currentTheme = htmlElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                    
+                    htmlElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('elite_theme', newTheme);
+                    updateThemeIcons(newTheme);
+                });
+            });
+
+            function updateThemeIcons(theme) {
+                const themeIcons = document.querySelectorAll('.theme-icon-element');
+                themeIcons.forEach(icon => {
+                    if (theme === 'dark') {
+                        icon.classList.remove('bi-moon-fill', 'text-muted');
+                        icon.classList.add('bi-sun-fill', 'text-warning');
+                    } else {
+                        icon.classList.remove('bi-sun-fill', 'text-warning');
+                        icon.classList.add('bi-moon-fill', 'text-muted');
+                    }
+                });
+            }
+
+            /* ==========================================
+               RTL ENGINE (Right-to-Left Mode)
+               ========================================== */
+            const savedDir = localStorage.getItem('elite_dir') || 'ltr';
+            htmlElement.setAttribute('dir', savedDir);
+
+            rtlToggles.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const currentDir = htmlElement.getAttribute('dir');
+                    const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+                    
+                    htmlElement.setAttribute('dir', newDir);
+                    localStorage.setItem('elite_dir', newDir);
+                });
+            });
+
+            /* ==========================================
+               STICKY NAVIGATION SHADOW
+               ========================================== */
+            const header = document.querySelector('nav'); // or 'header' if you wrapped your nav in a header tag
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        header.classList.add('shadow-sm');
+                    } else {
+                        header.classList.remove('shadow-sm');
+                    }
+                });
+            }
+
+            /* ==========================================
+               SMART ACTIVE NAVIGATION LINK HIGHLIGHTER
+               ========================================== */
+            // Get the full, clean URL (ignoring # or ? parameters)
+            let currentUrl = window.location.href.split('?')[0].split('#')[0];
+            
+            // If the local server hides the filename (e.g., ends in a slash), force index.html
+            if (currentUrl.endsWith('/')) {
+                currentUrl += 'index.html';
+            }
+
+            // Loop through every link in the navbar
+            document.querySelectorAll('.navbar-nav .nav-link, .dropdown-menu .dropdown-item').forEach(link => {
+                
+                // CRITICAL FIX: Ignore dropdown toggles that just use href="#" to open menus
+                if (link.getAttribute('href') === '#') return;
+
+                // Get the absolute full URL of the link
+                let linkUrl = link.href.split('?')[0].split('#')[0];
+                
+                // Check if they match perfectly
+                if (linkUrl === currentUrl) {
+                    // Turn the actual clicked link gold
+                    link.classList.add('active');
+                    
+                    // If this link is inside a dropdown, turn the main dropdown title gold too
+                    let parentDropdown = link.closest('.dropdown');
+                    if (parentDropdown) {
+                        let dropdownToggle = parentDropdown.querySelector('.dropdown-toggle');
+                        if (dropdownToggle) {
+                            dropdownToggle.classList.add('active');
+                        }
+                    }
+                }
+            });
+
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

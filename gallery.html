@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Gallery - High-End Auto Detailing</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+       <nav class="navbar navbar-expand-xl bg-main py-3 border-bottom sticky-top shadow-sm z-3">
+        <div class="container-fluid px-4">
+            
+            <a class="navbar-brand d-flex align-items-center m-0 text-decoration-none hover-scale" href="index.html">
+                <img src="images/generated-image-371222529.webp" alt="Elite Detailing Logo" height="40" class="me-2 flex-shrink-0">
+                <span class="logo-text fw-bold fs-4 text-main text-nowrap">Elite Cars.</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold small">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-lg-2" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="dashboardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-lg-2" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="dashboard-user.html">Client Portal</a></li>
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="dashboard-admin.html">Admin Operations</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+                <div class="nav-controls-wrapper d-flex flex-column flex-lg-row align-items-lg-center gap-3 mt-3 mt-lg-0">
+                    
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm bg-alt border shadow-sm theme-toggle-btn" aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill theme-icon-element text-muted"></i>
+                        </button>
+                        <button class="btn btn-sm bg-alt border shadow-sm rtl-toggle-btn fw-bold text-muted px-2" aria-label="Toggle RTL">
+                            RTL
+                        </button>
+                    </div>
+                    
+                    <div class="d-flex gap-2">
+                        <a href="login.html" class="btn btn-sm btn-outline-dark fw-bold px-4 shadow-sm">Login</a>
+                        <a href="book-now.html" class="btn btn-sm btn-secondary-custom fw-bold px-4 shadow-sm">Book Now</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="bg-alt">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">The Macro Gallery</h1>
+                <p class="lead mx-auto" style="max-width: 700px;">Visual proof of our mastercraft. Explore our recent paint corrections, ceramic coating applications, and exotic restorations.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="text-center mb-5">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="correction">Paint Correction</button>
+                    <button class="filter-btn" data-filter="ceramic">Ceramic Coating</button>
+                    <button class="filter-btn" data-filter="interior">Interior</button>
+                </div>
+
+                <div class="row g-4" id="galleryGrid">
+                    <div class="col-md-6 col-lg-4 gallery-item-wrapper correction">
+                        <div class="gallery-item rounded border bg-alt">
+                            <div class="d-flex align-items-center justify-content-center placeholder-img">
+                                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80" class="placeholder-img" alt="Gallery Image">
+                            </div>
+                            <div class="gallery-overlay">
+                                <h4 class="text-white mb-1">Ferrari F8</h4>
+                                <p class="text-secondary small fw-bold mb-0">Heavy Swirl Removal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gallery-item-wrapper ceramic">
+                        <div class="gallery-item rounded border bg-alt">
+                            <div class="d-flex align-items-center justify-content-center placeholder-img">
+                               <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80" class="w-100 d-block" alt="Aston Martin Ceramic" style="height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="gallery-overlay">
+                                <h4 class="text-white mb-1">Aston Martin DB12</h4>
+                                <p class="text-secondary small fw-bold mb-0">5-Year 10H Ceramic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gallery-item-wrapper interior">
+                        <div class="gallery-item rounded border bg-alt">
+                            <div class="d-flex align-items-center justify-content-center placeholder-img">
+                                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80" class="w-100 d-block" alt="Range Rover Interior" style="height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="gallery-overlay">
+                                <h4 class="text-white mb-1">Range Rover SV</h4>
+                                <p class="text-secondary small fw-bold mb-0">Leather Ceramic Protection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gallery-item-wrapper ceramic">
+                        <div class="gallery-item rounded border bg-alt">
+                            <div class="d-flex align-items-center justify-content-center placeholder-img">
+                               <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=600&q=80" class="w-100 d-block" alt="Porsche GT3 Wheel Coating" style="height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="gallery-overlay">
+                                <h4 class="text-white mb-1">Porsche 911 GT3</h4>
+                                <p class="text-secondary small fw-bold mb-0">Wheels-Off Coating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gallery-item-wrapper correction">
+                        <div class="gallery-item rounded border bg-alt">
+                            <div class="d-flex align-items-center justify-content-center placeholder-img">
+                               <img src="images/brandon-atchison-_DzW3MT-iIY-unsplash.webp" class="w-100 d-block" alt="McLaren Wet Sanding" style="height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="gallery-overlay">
+                                <h4 class="text-white mb-1">McLaren 720S</h4>
+                                <p class="text-secondary small fw-bold mb-0">Wet Sanding & Leveling</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 gallery-item-wrapper interior">
+                        <div class="gallery-item rounded border bg-alt">
+                            <div class="d-flex align-items-center justify-content-center placeholder-img">
+                                <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600&q=80" class="w-100 d-block" alt="Bentley Interior Deep Clean" style="height: 300px; object-fit: cover;">
+                            </div>
+                            <div class="gallery-overlay">
+                                <h4 class="text-white mb-1">Bentley Continental</h4>
+                                <p class="text-secondary small fw-bold mb-0">Carpet Extraction & Sealant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-alt">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Transformations</h2>
+                    <p class="text-muted">Witness the difference of true master-level correction.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm bg-main rounded overflow-hidden h-100 gallery-item">
+                            <div class="row g-0 h-100">
+                                <div class="col-6 position-relative border-end border-dark">
+                                    <div class="bg-main d-flex align-items-center justify-content-center" style="height: 300px;">
+                                       <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=400&q=80" class="w-100 d-block" alt="Before" style="height: 300px; object-fit: cover;">
+                                    </div>
+                                    <span class="badge bg-dark text-white position-absolute bottom-0 start-0 m-3">Before</span>
+                                </div>
+                                <div class="col-6 position-relative">
+                                    <div class="bg-main d-flex align-items-center justify-content-center" style="height: 300px;">
+                                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=400&q=80" class="w-100 d-block" alt="After" style="height: 300px; object-fit: cover;">
+                                    </div>
+                                    <span class="badge bg-secondary text-dark position-absolute bottom-0 end-0 m-3">After</span>
+                                </div>
+                            </div>
+                            <div class="p-4 text-center border-top">
+                                <h4 class="h6 fw-bold mb-1">1993 Porsche 964</h4>
+                                <p class="small text-muted mb-0">Single-Stage Paint Oxidation Removal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm bg-main rounded overflow-hidden h-100 gallery-item">
+                            <div class="row g-0 h-100">
+                                <div class="col-6 position-relative border-end border-dark">
+                                    <div class="bg-main d-flex align-items-center justify-content-center" style="height: 300px;">
+                                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80" class="w-100 d-block" alt="Before" style="height: 300px; object-fit: cover;">
+                                    </div>
+                                    <span class="badge bg-dark text-white position-absolute bottom-0 start-0 m-3">Before</span>
+                                </div>
+                                <div class="col-6 position-relative">
+                                    <div class="bg-main d-flex align-items-center justify-content-center" style="height: 300px;">
+                                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80" class="w-100 d-block" alt="After" style="height: 300px; object-fit: cover;">
+                                    </div>
+                                    <span class="badge bg-secondary text-dark position-absolute bottom-0 end-0 m-3">After</span>
+                                </div>
+                            </div>
+                            <div class="p-4 text-center border-top">
+                                <h4 class="h6 fw-bold mb-1">2021 Black Ford Raptor</h4>
+                                <p class="small text-muted mb-0">Heavy Trail Scratch & Swirl Removal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="py-5 bg-main">
+        <div class="container px-4">
+            
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-main mb-2">Cinematic Features</h2>
+                <p class="text-muted fs-5">Experience the Elite standard in motion.</p>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="rounded-4 overflow-hidden shadow-lg hover-scale" style="height: 450px;">
+                        <img src="images/jordy-munoz-B0tsLz-y0Xg-unsplash.webp" alt="Hero Gallery Image" class="w-100 h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm hover-scale" style="height: 250px;">
+                        <img src="images/flavien-ESXhISyyHho-unsplash.webp" alt="Detail 1" class="w-100 h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm hover-scale" style="height: 250px;">
+                        <img src="images/marc-kleen-UGO7cnEEdgY-unsplash.webp" alt="Detail 2" class="w-100 h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm hover-scale" style="height: 250px;">
+                        <img src="images/joao-paulo-m-ramos-paulo-4RDeYuk9ImM-unsplash.webp" alt="Detail 3" class="w-100 h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+        <section class="bg-alt">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Behind the Scenes</h2>
+                    <p class="text-muted">The precision tools behind our flawless finishes.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="bg-main border p-4 rounded text-center h-100 shadow-sm gallery-item">
+                            <div class="bg-alt rounded mb-3 d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=500&q=80" class="w-100 rounded mb-3" alt="RUPES Polishers" style="height: 200px; object-fit: cover;">
+                            </div>
+                            <h4 class="h6 fw-bold">Dual Action Polishers</h4>
+                            <p class="small text-muted mb-0">Utilizing Italian-engineered RUPES machines for hologram-free, perfectly leveled clear coats.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-main border p-4 rounded text-center h-100 shadow-sm gallery-item">
+                            <div class="bg-alt rounded mb-3 d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=500&q=80" class="w-100 rounded mb-3" alt="Scangrip Multi lights" style="height: 200px; object-fit: cover;">
+                            </div>
+                            <h4 class="h6 fw-bold">Scangrip Illumination</h4>
+                            <p class="small text-muted mb-0">Multi-temperature LED lighting that mimics direct sunlight, ensuring no defect goes unnoticed.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bg-main border p-4 rounded text-center h-100 shadow-sm gallery-item">
+                            <div class="bg-alt rounded mb-3 d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=500&q=80" class="w-100 rounded mb-3" alt="Paint Depth tools" style="height: 200px; object-fit: cover;">
+                            </div>
+                            <h4 class="h6 fw-bold">Paint Thickness Gauges</h4>
+                            <p class="small text-muted mb-0">Ultrasonic measurement tools to safely determine clear coat depth before any abrasive correction begins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="py-5" style="background-color: #0f172a;"> <div class="container px-4 py-5 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <h2 class="display-6 fw-bold mb-3" style="color: #ffffff !important;">Ready for Your Own Transformation?</h2>
+                    
+                    <p class="lead mb-5 px-md-4" style="color: rgba(255, 255, 255, 0.7) !important;">
+                        Your vehicle belongs in this gallery. Secure your appointment today.
+                    </p>
+                    
+                <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                    <a href="contact.html" class="btn btn-outline-light btn-lg fw-bold px-5 text-uppercase tracking-wider shadow-sm rounded-0 d-inline-flex align-items-center justify-content-center" style="min-height: 54px;">
+                        Contact Us
+                    </a>
+                    <a href="book-now.html" class="btn btn-secondary-custom btn-lg fw-bold px-5 text-uppercase tracking-wider shadow-sm rounded-0 d-inline-flex align-items-center justify-content-center" style="min-height: 54px;">
+                        Book Consultation
+                    </a>
+                </div>
+                    
+            </div>
+        </section>
+    </main>
+
+   <footer class="bg-main border-top pt-5 pb-3 mt-auto z-2 position-relative">
+        <div class="container-fluid px-4">
+            <div class="row g-5 mb-5">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/generated-image-371222529.webp" alt="Elite Detailing Logo" height="50" class="me-3">
+                        <h4 class="logo-text fw-bold m-0 text-main">Elite Cars.</h4>
+                    </div>
+                    <p class="small text-muted mb-4 pe-lg-4 lh-lg">
+                        Automotive mastercraft. We do not just wash cars; we re-engineer clear coats, meticulously restore exotic leathers, and lock in absolute perfection with structural nanoceramics.
+                    </p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small">
+                        <li><a href="index.html" class="text-muted text-decoration-none hover-scale d-inline-block">Home</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none hover-scale d-inline-block">About Us</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Services</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none hover-scale d-inline-block">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Our Expertise</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small">
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Nanoceramic Coatings</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Paint Protection Film</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Paint Correction</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Leather Restoration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Hyderabad HQ</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small text-muted">
+                        <li class="d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt-fill text-secondary fs-5 mt-1"></i>
+                            <span class="lh-base">Level 4, Quantum Tech Park,<br>Hyderabad, Telangana, 500081</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone-fill text-secondary fs-5"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 pb-2 border-top small text-muted">
+                
+                <p class="mb-4 mb-md-0 fw-bold">&copy; 2026 Elite Detailing. All rights reserved.</p>
+                
+                <div class="d-flex flex-row gap-2">
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item-wrapper');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+
+
+/* ==========================================================================
+   Sticky Navigation Shadow Effect
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+
+    if (header) {
+        window.addEventListener('scroll', function() {
+            // If the user scrolls down more than 50 pixels, add the shadow
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled-nav');
+            } else {
+                // If they are at the very top, remove the shadow
+                header.classList.remove('scrolled-nav');
+            }
+        });
+    }
+});
+
+/* ==========================================================================
+   Elite Detailing - Core Application Logic
+   ========================================================================== */
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Target the HTML element (where our theme & dir attributes live)
+    const htmlElement = document.documentElement;
+    
+    // 2. Find our toggle buttons
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const rtlToggleBtn = document.getElementById('rtlToggle');
+
+    /* ==========================================
+       THEME ENGINE (Light / Dark Mode)
+       ========================================== */
+    
+    // Check if the user already saved a theme preference in their browser
+    const savedTheme = localStorage.getItem('elite_theme') || 'light';
+    
+    // Apply it immediately on load
+    htmlElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    // If the button exists on this page, make it clickable
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            // Update the HTML attribute
+            htmlElement.setAttribute('data-theme', newTheme);
+            
+            // Save to browser memory
+            localStorage.setItem('elite_theme', newTheme);
+            
+            // Change the icon (Moon to Sun)
+            updateThemeIcon(newTheme);
+        });
+    }
+
+    // Helper function to swap the Moon/Sun icon
+    function updateThemeIcon(theme) {
+        if (!themeIcon) return; // Skip if icon isn't on this page
+        
+        if (theme === 'dark') {
+            themeIcon.classList.remove('bi-moon-fill');
+            themeIcon.classList.add('bi-sun-fill');
+        } else {
+            themeIcon.classList.remove('bi-sun-fill');
+            themeIcon.classList.add('bi-moon-fill');
+        }
+    }
+
+    /* ==========================================
+       RTL ENGINE (Right-to-Left Mode)
+       ========================================== */
+    
+    // Check if the user saved an RTL preference
+    const savedDir = localStorage.getItem('elite_dir') || 'ltr';
+    
+    // Apply it immediately
+    htmlElement.setAttribute('dir', savedDir);
+
+    // If the RTL button exists on this page, make it clickable
+    if (rtlToggleBtn) {
+        rtlToggleBtn.addEventListener('click', () => {
+            const currentDir = htmlElement.getAttribute('dir');
+            const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+            
+            // Update the HTML attribute
+            htmlElement.setAttribute('dir', newDir);
+            
+            // Save to browser memory
+            localStorage.setItem('elite_dir', newDir);
+        });
+    }
+
+    /* ==========================================
+       STICKY NAVIGATION SHADOW (Bonus Polish)
+       ========================================== */
+    const header = document.querySelector('header');
+    
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled-nav');
+            } else {
+                header.classList.remove('scrolled-nav');
+            }
+        });
+    }
+
+});
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const htmlElement = document.documentElement;
+            const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
+            const rtlToggleBtns = document.querySelectorAll('.rtl-toggle-btn');
+            
+            // --- THEME LOGIC ---
+            const savedTheme = localStorage.getItem('elite_theme') || 'light';
+            htmlElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcons(savedTheme);
+
+            themeToggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const currentTheme = htmlElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                    htmlElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('elite_theme', newTheme);
+                    updateThemeIcons(newTheme);
+                });
+            });
+
+            function updateThemeIcons(theme) {
+                const themeIcons = document.querySelectorAll('.theme-icon-element');
+                themeIcons.forEach(icon => {
+                    if (theme === 'dark') {
+                        icon.classList.remove('bi-moon-fill', 'text-muted');
+                        icon.classList.add('bi-sun-fill', 'text-warning');
+                    } else {
+                        icon.classList.remove('bi-sun-fill', 'text-warning');
+                        icon.classList.add('bi-moon-fill', 'text-muted');
+                    }
+                });
+            }
+            
+            // --- RTL LOGIC ---
+            const savedDir = localStorage.getItem('elite_dir') || 'ltr';
+            htmlElement.setAttribute('dir', savedDir);
+
+            rtlToggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const currentDir = htmlElement.getAttribute('dir');
+                    const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+                    htmlElement.setAttribute('dir', newDir);
+                    localStorage.setItem('elite_dir', newDir);
+                });
+            });
+        });
+        // Automatically highlight the active navigation link
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get the current file name (e.g., "about.html")
+        let currentPage = window.location.pathname.split("/").pop();
+        
+        // If it's blank (like just "www.elitecars.com/"), default to index.html
+        if (currentPage === "") {
+            currentPage = "index.html";
+        }
+
+        // Find all nav links and add the 'active' class to the one that matches
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Elite Detailing</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-alt">
+
+   <nav class="navbar navbar-expand-xl bg-main py-3 border-bottom sticky-top shadow-sm z-3">
+        <div class="container-fluid px-4">
+            
+            <a class="navbar-brand d-flex align-items-center m-0 text-decoration-none hover-scale" href="index.html">
+                <img src="images/generated-image-371222529.webp" alt="Elite Detailing Logo" height="40" class="me-2 flex-shrink-0">
+                <span class="logo-text fw-bold fs-4 text-main text-nowrap">Elite Cars.</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold small">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-lg-2" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="dashboardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-3 mt-lg-2" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="dashboard-user.html">Client Portal</a></li>
+                            <li><a class="dropdown-item fw-bold text-muted hover-bg" href="dashboard-admin.html">Admin Operations</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+                <div class="nav-controls-wrapper d-flex flex-column flex-lg-row align-items-lg-center gap-3 mt-3 mt-lg-0">
+                    
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm bg-alt border shadow-sm theme-toggle-btn" aria-label="Toggle Dark Mode">
+                            <i class="bi bi-moon-fill theme-icon-element text-muted"></i>
+                        </button>
+                        <button class="btn btn-sm bg-alt border shadow-sm rtl-toggle-btn fw-bold text-muted px-2" aria-label="Toggle RTL">
+                            RTL
+                        </button>
+                    </div>
+                    
+                    <div class="d-flex gap-2">
+                        <a href="login.html" class="btn btn-sm btn-outline-dark fw-bold px-4 shadow-sm">Login</a>
+                        <a href="book-now.html" class="btn btn-sm btn-secondary-custom fw-bold px-4 shadow-sm">Book Now</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1 container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                
+                <div class="text-center mb-5">
+                    <span class="badge bg-secondary text-dark px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider shadow-sm mb-3">Priority Intake</span>
+                    <h1 class="display-5 fw-bold text-main mb-3">Reserve Your Build Slot</h1>
+                    <p class="text-muted lead">Provide your vehicle specifications below to secure your advanced surface treatment at our Hyderabad studio.</p>
+                </div>
+
+                <div class="card border-0 shadow-sm bg-main rounded-4 p-4 p-md-5">
+                    <form class="needs-validation" novalidate>
+                        
+                        <h4 class="h5 fw-bold text-main border-bottom pb-3 mb-4">1. Client Information</h4>
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label small fw-bold text-main">First Name</label>
+                                <input type="text" class="form-control py-3 bg-alt border" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label small fw-bold text-main">Last Name</label>
+                                <input type="text" class="form-control py-3 bg-alt border" id="lastName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label small fw-bold text-main">Email Address</label>
+                                <input type="email" class="form-control py-3 bg-alt border" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label small fw-bold text-main">Phone Number</label>
+                                <input type="tel" class="form-control py-3 bg-alt border" id="phone" required>
+                            </div>
+                        </div>
+
+                        <h4 class="h5 fw-bold text-main border-bottom pb-3 mb-4">2. Vehicle Specifications</h4>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <label for="carInfo" class="form-label small fw-bold text-main">Make & Model</label>
+                                <input type="text" class="form-control py-3 bg-alt border" id="carInfo" placeholder="e.g., 2025 Porsche 911 GT3" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="bookDate" class="form-label small fw-bold text-main">Preferred Target Date</label>
+                                <input type="date" class="form-control py-3 bg-alt border" id="bookDate" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="packageSelection" class="form-label small fw-bold text-main">Select Core Protection Tier</label>
+                            <select class="form-select py-3 bg-alt border" id="packageSelection" required>
+                                <option value="" selected disabled>Choose a signature package...</option>
+                                <option value="l1">Level 1: Enhancement Package (1-Year Protection Coat)</option>
+                                <option value="l2">Level 2: Correction Package (3-Year 9H Nanoceramic Matrix)</option>
+                                <option value="l3">Level 3: Mastercraft Paint Correction & 10H Ceramic Coating</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-5 bg-alt p-4 rounded-4 border">
+                            <h4 class="h6 fw-bold mb-3 text-main">Specialized Enhancements (Optional)</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-check p-3 rounded bg-main border m-0 d-flex align-items-center">
+                                        <input class="form-check-input ms-0 me-3" type="checkbox" id="addon1" value="wheels" style="transform: scale(1.2);">
+                                        <label class="form-check-label small text-main fw-bold m-0 w-100" style="cursor:pointer;" for="addon1">Wheels-Off 10H Coating (+$350)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-3 rounded bg-main border m-0 d-flex align-items-center">
+                                        <input class="form-check-input ms-0 me-3" type="checkbox" id="addon2" value="glass" style="transform: scale(1.2);">
+                                        <label class="form-check-label small text-main fw-bold m-0 w-100" style="cursor:pointer;" for="addon2">Glass Hydrophobic Matrix (+$150)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-3 rounded bg-main border m-0 d-flex align-items-center">
+                                        <input class="form-check-input ms-0 me-3" type="checkbox" id="addon3" value="leather" style="transform: scale(1.2);">
+                                        <label class="form-check-label small text-main fw-bold m-0 w-100" style="cursor:pointer;" for="addon3">Exotic Leather Ceramic (+$250)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check p-3 rounded bg-main border m-0 d-flex align-items-center">
+                                        <input class="form-check-input ms-0 me-3" type="checkbox" id="addon4" value="engine" style="transform: scale(1.2);">
+                                        <label class="form-check-label small text-main fw-bold m-0 w-100" style="cursor:pointer;" for="addon4">Engine Bay Restoration (+$200)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-secondary-custom py-3 px-5 rounded-pill fw-bold text-uppercase tracking-wider shadow-sm w-100">Confirm Booking Request</button>
+                            <p class="small text-muted mt-3"><i class="bi bi-shield-lock-fill me-1"></i> Your information is securely encrypted.</p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-main border-top pt-5 pb-3 mt-auto z-2 position-relative">
+        <div class="container-fluid px-4">
+            <div class="row g-5 mb-5">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/generated-image-371222529.webp" alt="Elite Detailing Logo" height="50" class="me-3">
+                        <h4 class="logo-text fw-bold m-0 text-main">Elite Cars.</h4>
+                    </div>
+                    <p class="small text-muted mb-4 pe-lg-4 lh-lg">
+                        Automotive mastercraft. We do not just wash cars; we re-engineer clear coats, meticulously restore exotic leathers, and lock in absolute perfection with structural nanoceramics.
+                    </p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small">
+                        <li><a href="index.html" class="text-muted text-decoration-none hover-scale d-inline-block">Home</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none hover-scale d-inline-block">About Us</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Services</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none hover-scale d-inline-block">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Our Expertise</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small">
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Nanoceramic Coatings</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Paint Protection Film</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Paint Correction</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none hover-scale d-inline-block">Leather Restoration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="h6 fw-bold mb-4 text-main text-uppercase tracking-wider">Hyderabad HQ</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 small text-muted">
+                        <li class="d-flex align-items-start gap-3">
+                            <i class="bi bi-geo-alt-fill text-secondary fs-5 mt-1"></i>
+                            <span class="lh-base">Level 4, Quantum Tech Park,<br>Hyderabad, Telangana, 500081</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="bi bi-telephone-fill text-secondary fs-5"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 pb-2 border-top small text-muted">
+                
+                <p class="mb-4 mb-md-0 fw-bold">&copy; 2026 Elite Detailing. All rights reserved.</p>
+                
+                <div class="d-flex flex-row gap-2">
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="btn bg-alt border rounded-circle text-muted hover-scale d-flex align-items-center justify-content-center shadow-sm" style="width: 38px; height: 38px;" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const htmlElement = document.documentElement;
+            const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
+            const rtlToggleBtns = document.querySelectorAll('.rtl-toggle-btn');
+            
+            const savedTheme = localStorage.getItem('elite_theme') || 'light';
+            htmlElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcons(savedTheme);
+
+            themeToggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const currentTheme = htmlElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                    htmlElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('elite_theme', newTheme);
+                    updateThemeIcons(newTheme);
+                });
+            });
+
+            function updateThemeIcons(theme) {
+                const themeIcons = document.querySelectorAll('.theme-icon-element');
+                themeIcons.forEach(icon => {
+                    if (theme === 'dark') {
+                        icon.classList.remove('bi-moon-fill', 'text-muted');
+                        icon.classList.add('bi-sun-fill', 'text-warning');
+                    } else {
+                        icon.classList.remove('bi-sun-fill', 'text-warning');
+                        icon.classList.add('bi-moon-fill', 'text-muted');
+                    }
+                });
+            }
+            
+            const savedDir = localStorage.getItem('elite_dir') || 'ltr';
+            htmlElement.setAttribute('dir', savedDir);
+
+            rtlToggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const currentDir = htmlElement.getAttribute('dir');
+                    const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+                    htmlElement.setAttribute('dir', newDir);
+                    localStorage.setItem('elite_dir', newDir);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
