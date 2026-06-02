@@ -686,6 +686,26 @@ html[data-theme="light"] .premium-image-card-content span {
 }
 
 /* ==========================================================================
+   GALLERY IMAGE TEXT VISIBILITY FIX (GOLD EDITION)
+   ========================================================================== */
+
+/* 1. Locks the text to GOLD and forces it to sit on top */
+.gallery-overlay-text,
+.gallery-overlay-text * {
+    color: #ffc107 !important; 
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.9) !important; 
+    z-index: 10 !important; 
+}
+
+/* 2. Forces the color to STAY GOLD even when the mouse hovers over the image */
+.card:hover .gallery-overlay-text,
+.card:hover .gallery-overlay-text *,
+a:hover .gallery-overlay-text,
+a:hover .gallery-overlay-text * {
+    color: #ffc107 !important;
+}
+
+/* ==========================================================================
    Contact Page & Form Specific Styles
    ========================================================================== */
 
